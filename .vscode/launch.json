@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Test ExamplePackage",
+            "program": "${workspaceFolder:ExamplePackage}/.build/debug/ExamplePackagePackageTests.xctest",
+            "cwd": "${workspaceFolder:ExamplePackage}",
+            "preLaunchTask": "swift: Build All"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug gimp-client",
+            "program": "${workspaceFolder:ExamplePackage}/.build/debug/gimp-client",
+            "args": [],
+            "cwd": "${workspaceFolder:ExamplePackage}",
+            "preLaunchTask": "swift: Build Debug gimp-client"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release gimp-client",
+            "program": "${workspaceFolder:ExamplePackage}/.build/release/gimp-client",
+            "args": [],
+            "cwd": "${workspaceFolder:ExamplePackage}",
+            "preLaunchTask": "swift: Build Release gimp-client"
+        }
+    ]
+}
